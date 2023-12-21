@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav-wrapper">
+        <h1 class="logo">LOGO</h1>
+        <div class="nav-items">
+            <a href="">Home</a>
+            <a href="">Our Profile</a>
+            <a href="#facilitation">Achievment</a>
+            <a href="#messageus">Message Us</a>
+        </div>
+    </nav>
+    <header>
+        <section class="home">
+            <div class="home-text">
+                <div class="text-container">
+                    <h1>Hi <b><span id="sender-greeting"></span></b> Welcome to my web!</h1>
+                    <p> i am UI/UX Designer with a passion for designing beautiful functional user experiences </p>
+                    <img src="assets/bannerbg.jpg" alt="" class="banner">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="about-me">
+            <img src="assets/maavgapunyapotomuka.png" alt="" class="image">
+            <div class="about-me-text">
+                <h1>About me</h1>
+                <hr>
+                <p>Hi! My name is IHSAN SAEFULMILLAH.i am UI/UX designer,<br> and i'm very passionate and dedicated to
+                    my
+                    work, i enjoy <br> turning complex problems into simple.My aim is to bring <br> across your message
+                    and
+                    identity in the most creative way. <br> I have acquired the skills and knowledge necessary to make
+                    <br> your
+                    project success.
+                </p>
+                <h2> Education : </h2>
+                <hr>
+                <ul class="count">
+                    <li>- SMAN 21 Bandung</li>
+                    <li>- SMP EL FITRA</li>
+                    <li>- SD min 2 Bandung</li>
+                </ul>
+                <h2>Vision :</h2>
+                <hr>
+                <p>To be a UI/UX Designer who can create digital products <br> that are both useful and user-friendly,
+                    so
+                    that they can <br> improve the user experience and make products easier <br>to use. <br></p>
+                <h2>Mision :</h2>
+                <ul class="mission">
+                    <li>-To improve skills and knowledge in the field <br> of UI/UX Design, so that they can produce
+                        <br> quality
+                        designs.
+                    </li>
+                    <li>-To collaborate with various teams to realize <br> my vision.</li>
+                    <li>-To make a contribution to creating digital <br> products that are beneficial to society.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+    <h1 id="facilitation">Our facilitations</h1>
+    <div class="facilitations">
+        <div class="semicircle">
+            <img class="circle" style="background-image: url('assets/page-speed-optimization.png');">
+            </img>
+            <h4>Web speed optimization</h4>
+            <button class="rmbtn">Read more</button>
+        </div>
+        <div class="semicircle">
+            <img class="circle" style="background-image: url('assets/gibah.jpg');">
+            <h4>gibahpickme</h4>
+            <button class="rmbtn">Read more</button>
+        </div>
+        <div class="semicircle">
+            <img class="circle" style="background-image: url('assets/ganjar.jpg');">
+            <h4>habisin kuota</h4>
+            <button class="rmbtn">Read more</button>
+        </div>
+    </div>
+    <hr>
+    <div class="message-us" id="messageus">
+        <div class="form-message">
+            <div class="mesekas">
+                <h1>Messages Us</h1>
+            </div>
+            <div class="contact-form">
+                <form name="message-form" onsubmit="return validateForm()">
+                    Nama : <input placeholder="Nama" type="text" name="full-name" id="name" />
+                    <br />
+
+                    Tanggal Lahir:
+                    <input type="date" name="birth-date" />
+                    <br />
+
+                    Jenis Kelamin:
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="male" />
+                    <label for="female">Perempuan</label>
+                    <br />
+
+                    Pesan:
+                    <textarea style="color: grey;" placeholder="Pesan" name="messages"></textarea>
+                    <br />
+
+                    <input type="submit" value="submit" id="kirim" class="rmbtn">
+                    <p id="error-name"></p>
+                </form>
+            </div>
+            <div class="result">
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+                <p><span id="sender-hasil"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
